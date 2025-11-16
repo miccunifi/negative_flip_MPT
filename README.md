@@ -15,7 +15,7 @@ Minimizing inconsistencies across successive versions of an AI system is as cruc
 
 ![assets/teaser.png](assets/teaser.png "Teaser of the method")
 
-Schematic overview of the proposed Margin Preserving Training (MPT) approach. A model $\phi$ is trained with the margin-calibrated loss $\mathcal{L}_\Delta$ while receiving double-source focal distillation from two reference models, $\phi_\text{old}$ and $\phi_\text{new}$ (both optimized with cross-entropy). This combination mitigates margin underestimation for new classes, reduces negative flips between model updates, and preserves decision margins for old classes. The gray region marks areas near decision boundaries where negative flips typically occur. Margins are illustrated in a 2D embedding space for clarity, although MPT operates on logit-space margins over all classes.
+Schematic overview of the proposed Margin Preserving Training (MPT) approach. A model $\phi$ is trained with the margin-calibrated loss $\mathcal{L}_{\Delta}$ while receiving double-source focal distillation from two reference models, $\phi_{\text{old}}$ and $\phi_{\text{new}}$ (both optimized with cross-entropy). This combination mitigates margin underestimation for new classes, reduces negative flips between model updates, and preserves decision margins for old classes. The gray region marks areas near decision boundaries where negative flips typically occur. Margins are illustrated in a 2D embedding space for clarity, although MPT operates on logit-space margins over all classes.
 
 ## Citation
 ```bibtex
